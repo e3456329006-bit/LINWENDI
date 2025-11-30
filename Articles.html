@@ -5,83 +5,78 @@
   <meta charset="utf-8">
   <title>Articles – 100SMILES Dental Care</title>
 </head>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="services.html">services</a> |
-    <a href="our team.html">our team</a> |
-    <a href="Articles.html">Articles</a> |
-    <a href="contactus.html">contactus</a>|
 
-  </nav>
+ <header>
+    <div id="clinic-logo">
+        <h1>100SMILES Dental Care</h1>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="our team.html">Our Team</a>
+            <a href="Articles.html">Articles</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="booking.html">Book Online</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="our team.html">Our Team</a>
+        <a href="Articles.html">Articles</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="booking.html" class="cta">Book Online</a>
+    </nav>
+</header>
+
+
 <body>
   <h1>Articles That Might Interest You</h1>
 
   <ul>
-    <li><a href="#article1">The Importance of Regular Dental Check-Ups</a></li>
-    <li><a href="#article2">Tips for Maintaining Oral Hygiene</a></li>
-    <li><a href="#article3">Understanding Dental Implants</a></li>
-    <li><a href="#article4">How to Choose the Right Toothbrush</a></li>
-  </ul>
+    <ul>
+    <li><a href="article-annual-checkup.html">The Importance of Annual Dental Check-Ups</a></li>
+    <li><a href="article-oral-hygiene.html">Tips for Maintaining Oral Hygiene</a></li>
+    <li><a href="article-dental-implants.html">Understanding Dental Implants</a></li>
+    <li><a href="article-toothbrush.html">How to Choose the Right Toothbrush</a></li>
+</ul>
 
-  <hr>
+
+
+  
+
 
   <article id="article1">
-    <h2>Article: The Importance of Annual Dental Check-Ups – Investing in Lifelong Dental Health</h2>
+   <h2>Articles That Might Interest You</h2>
 
-    <p>
-      Our smiles bring boundless joy, confidence, and well-being into our lives.
-      As responsible individuals, it is our duty to ensure our dental health by prioritising preventive care,
-      and a crucial aspect of this care is the Annual Dental Check-up. This routine examination serves as a
-      cornerstone in maintaining your dental health and happiness.
-    </p>
+<div class="article-buttons">
+    <a class="article-button" href="article-annual-checkup.html">
+        The Importance of Annual Dental Check-Ups
+    </a>
 
-    <p><strong>1. Early Detection of Health Issues:</strong>
-      Annual Dental Check-ups provide dentists with the opportunity to detect potential health issues early on.
-      Just as regular doctor visits are vital for humans, routine check-ups for dental health allow dentists
-      to identify and address emerging health concerns before they escalate. Early detection often leads to
-      more effective treatments and a higher chance of successful outcomes.
-    </p>
+    <a class="article-button" href="article-oral-hygiene.html">
+        Tips for Maintaining Oral Hygiene
+    </a>
 
-    <p><strong>2. Preventive Care:</strong>
-      Regular cleanings and check-ups are a fundamental component of the Annual Dental Check-up.
-      These preventive measures protect you from serious, and sometimes life-threatening, dental diseases.
-      Additionally, preventive measures such as X-rays and dental check-ups contribute significantly
-      to your overall well-being.
-    </p>
+    <a class="article-button" href="article-dental-implants.html">
+        Understanding Dental Implants
+    </a>
 
-    <p><strong>3. Tailored Nutritional Guidance:</strong>
-      Individuals have unique dietary needs at different stages of their lives.
-      The Annual Dental Check-up provides an opportunity for dentists to assess your nutritional requirements
-      and offer guidance on a diet that supports your dental health and vitality.
-    </p>
+    <a class="article-button" href="article-toothbrush.html">
+        How to Choose the Right Toothbrush
+    </a>
+</div>
 
-    <p><strong>4. Dental Health Evaluation:</strong>
-      Oral health is often overlooked, yet it plays a crucial role in your overall health.
-      During the check-up, dentists examine the condition of your teeth and gums,
-      addressing any signs of dental disease. Good oral hygiene can prevent a range of
-      health issues and contribute to a longer, healthier life.
-    </p>
-
-    <p><strong>5. Holistic Well-being:</strong>
-      Beyond addressing specific health concerns, Annual Dental Check-ups contribute to the holistic
-      well-being of your dental health. A dentist's expertise can guide you in providing the best
-      environment, oral hygiene routine, and mental stimulation for your dental health,
-      ensuring overall happiness and quality of life.
-    </p>
-
-    <p><strong>6. Addressing Behavioural Changes:</strong>
-      Individuals can experience changes in behaviour that may indicate underlying health issues.
-      Annual Dental Check-ups offer an opportunity to discuss any behavioural changes with your dentist,
-      allowing for early intervention and tailored solutions.
-    </p>
-
-    <p>
-      <strong>To sum up:</strong> Investing in the Annual Dental Check-up is an investment in your lifelong
-      health and happiness. This proactive approach to dental care not only safeguards against potential
-      health issues but also strengthens the bond between you and your dentist. Schedule your Annual
-      Dental Check-up today and embark on a journey of comprehensive care that ensures a vibrant and
-      fulfilling life for your dental health.
-    </p>
   </article>
 
   <article id="article2">
@@ -98,6 +93,18 @@
     <h2>How to Choose the Right Toot</h2>
     <p>Coming soon.</p>
   </article>
+  <script>
+function hamburger() {
+    var menu = document.getElementById("menu-links");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
+</body>
          <footer>
             <p>&copy; Copyright 1975. All Rights Reserved.</p>
             <p><a href="mailto:100SMILES@Dental Care.net">100SMILES@Dental Care.net</a></p>

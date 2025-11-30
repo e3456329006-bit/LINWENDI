@@ -18,18 +18,41 @@
                  <img src="Images/AdobeStock_261497775.jpeg"alt="background" height="220" width="297" class="img">
             </a>
            
-        </header>
+    <div id="clinic-logo">
+        <h1>100SMILES Dental Care</h1>
+    </div>
 
-        <nav>
-            <p>
-                <a href="index.html">Home</a> &nbsp;&#9475;&nbsp;
-                <a href="services.html">services</a> &nbsp;&#9475;&nbsp;
-                <a href="our team.html">Our team</a> &nbsp;&#9475;&nbsp;
-                <a href="Articles.html">Articles</a> &nbsp;&#9475;&nbsp;
-                <a href="contactus.html">Contact Us</a>&nbsp;&#9475;&nbsp;
-               
-            </p>
-        </nav>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="our team.html">Our Team</a>
+            <a href="Articles.html">Articles</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="booking.html">Book Online</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="our team.html">Our Team</a>
+        <a href="Articles.html">Articles</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="booking.html" class="cta">Book Online</a>
+    </nav>
+</header>
+
+
+           
+
 
         <main class="desktop">
             <div id="intro">
@@ -51,11 +74,64 @@
             </ul>
             </div>
         </main>
+            <section class="announcements-section">
+    <h5>Announcements</h5>
+
+    <ul class="announcement-list">
+        <li>
+            🎉 <strong>25% discount</strong> on your next dental visit when you book through our 
+            <a href="booking.html">online booking form</a>!
+        </li>
+        <li>
+            🦷 <strong>Free Dental Check-Up</strong> on <strong>Saturday, 5th July</strong> starting at <strong>9 AM</strong>.
+            Limited slots available — book early!
+        </li>
+        <li>
+            ✨ <strong>10% discount</strong> on your <strong>Annual Dental Check-Up</strong> (until April 30).
+        </li>
+    </ul>
+</section>
+
+<section class="external-links-section">
+    <h2>External Links</h2>
+    <p>Need more information or want to get in touch quickly? Use the links below:</p>
+
+    <ul class="external-links">
+        <li>
+            📍 <strong>Visit Us:</strong>
+            <a href="https://www.google.com/maps/search/33+Fantail+Street,+Razole,+Queensland"
+               target="_blank">
+               33 Fantail Street, Razole
+            </a>
+        </li>
+        <li>
+            📞 <strong>Call Us:</strong>
+            <a href="tel:0750005599">07 5000 5599</a>
+        </li>
+        <li>
+            ✉️ <strong>Email:</strong>
+            <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a>
+        </li>
+    </ul>
+</section>
 
         <footer>
             <p>&copy; Copyright 1975. All Rights Reserved.</p>
             <p><a href="mailto:100SMILES@Dental Care.net">100SMILES@Dental Care.net</a></p>
         </footer>
     </div>
+
+   <script>
+function hamburger() {
+    var menu = document.getElementById("menu-links");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
+
 </body>
 </html>

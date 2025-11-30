@@ -11,17 +11,44 @@
   <header>
     <img src="Images/AdobeStock_283903376.jpeg" alt="background" width="220">
     <h1>Contact Us to make Appointment</h1>
-  </header>
+    <h2>100SMILES Dental Care</h2>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="services.html">services</a> |
-    <a href="our team.html">our team</a> |
-    <a href="Articles.html">Articles</a> |
-    <a href="contactus.html">contactus</a>|
+   
+    <div id="clinic-logo">
+        <h1>100SMILES Dental Care</h1>
+    </div>
 
-  </nav>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="our team.html">Our Team</a>
+            <a href="Articles.html">Articles</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="booking.html">Book Online</a>
+        </div>
 
+        <!-- Hamburger Icon -->
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="our team.html">Our Team</a>
+        <a href="Articles.html">Articles</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="booking.html" class="cta">Book Online</a>
+    </nav>
+</header>
+
+
+
+  
   <main>
     <h2>We’d Love to Hear From You!</h2>
     <p><strong>Phone:</strong> (07) 5000 5599<br>
@@ -37,5 +64,19 @@
   <footer>
     <p>&copy; Copyright 1975. All Rights Reserved.</p>
   </footer>
+
+  
+<script>
+function hamburger() {
+    var menu = document.getElementById("menu-links");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
+
 </body>
 </html>

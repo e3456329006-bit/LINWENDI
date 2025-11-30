@@ -7,12 +7,27 @@
   <title>Our Team – 100SMILES Dental Care</title>
 </head>
 <body>
-     <nav>
-    <a href="index.html">Home</a> |
-    <a href="services.html">services</a> |
-    <a href="our team.html">our team</a> |
-    <a href="Articles.html">Articles</a> |
-    <a href="contactus.html">contactus</a>|
+    
+<header>
+  
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">services</a>
+        <a href="our team.html">our team</a>
+        <a href="Articles.html">Articles</a>
+        <a href="contactus.html">contactus</a>
+        <a href="booking.html" class="cta">Book Online</a>
+    </nav>
+</header>
 
   </nav>
   <h1>Meet Our Team</h1>
@@ -63,5 +78,18 @@
             <p>&copy; Copyright 1975. All Rights Reserved.</p>
             <p><a href="mailto:100SMILES@Dental Care.net">100SMILES@Dental Care.net</a></p>
         </footer>
+
+        <script>
+function hamburger() {
+    var menu = document.getElementById("menu-links");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
+
 </body>
 </html>
